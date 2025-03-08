@@ -251,7 +251,7 @@ export default async function Home() {
               <div className="mb-12 text-center">
                 <h2 className="text-4xl font-bold">
                   <span className="text-amber-500">
-                    Productive, Light, Easy, Affordable
+                    Productive, Light, Free and private
                   </span>
                 </h2>
               </div>
@@ -349,11 +349,12 @@ export default async function Home() {
                     </div>
                     <div>
                       <h3 className="mb-2 text-xl font-semibold">
-                        Multiple payment options
+                        Open source, free and private
                       </h3>
                       <p className="text-slate-300">
-                        Have more than one debit or credit card? Don&apos;t
-                        worry, we support payments using more than one card.
+                        As an open source and free platform, we don&apos;t have
+                        any interest in your private data. You don&apos;t need
+                        to worry about exposing your private data.
                       </p>
                     </div>
                   </div>
