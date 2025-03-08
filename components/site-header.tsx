@@ -6,6 +6,7 @@ import { MobileNav } from './mobile-nav';
 import { ModeToggle } from './mode-toggle';
 
 import Image from 'next/image';
+import { DownloadButton } from './download-button';
 
 interface SiteHeaderProps {
   isLoginPage?: boolean;
@@ -59,6 +60,7 @@ export function SiteHeader({ isLoginPage = false }: SiteHeaderProps) {
           >
             Grab it now
           </Link>
+
           <MobileNav isAuthenticated={false} />
         </div>
       </div>

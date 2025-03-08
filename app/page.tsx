@@ -17,6 +17,7 @@ import {
   CardTitle,
   CardDescription,
 } from '@/components/ui/card';
+import { DownloadButton } from '@/components/download-button';
 
 const description =
   'iTracksy: AI-powered Chrome extension for smart browsing. Get website summaries, YouTube insights, and access an AI Prompt Library.';
@@ -93,30 +94,7 @@ export default async function Home() {
                     performance. No credit card required!
                   </p>
                   <div className="mb-8">
-                    <Link
-                      href="/signup"
-                      className="relative rounded-full bg-amber-500 px-8 py-4 font-medium text-white hover:bg-amber-600"
-                    >
-                      Get the tracker for Free!
-                      <span className="absolute -right-4 -top-2">
-                        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-green-500 text-white shadow-lg">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="20"
-                            height="20"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          >
-                            <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
-                            <line x1="7" y1="7" x2="7.01" y2="7"></line>
-                          </svg>
-                        </div>
-                      </span>
-                    </Link>
+                    <DownloadButton />
                   </div>
 
                   <div className="flex flex-col">
@@ -124,9 +102,13 @@ export default async function Home() {
                       Available on
                     </p>
                     <div className="flex items-center space-x-4">
-                      <div className="flex items-center">
-                        <span className="mr-1 text-sm font-medium">OS</span>
-                        <div className="flex h-8 w-8 items-center justify-center rounded bg-blue-100 dark:bg-blue-900">
+                      <a
+                        href="https://github.com/itracksy/itracksy/releases/download/v1.0.138/itracksy-1.0.138.Setup.exe"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center space-x-1 rounded-md bg-blue-100 px-3 py-1 transition-colors hover:bg-blue-200 dark:bg-blue-900 dark:hover:bg-blue-800"
+                      >
+                        <div className="flex h-8 w-8 items-center justify-center">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="16"
@@ -151,8 +133,73 @@ export default async function Home() {
                             <line x1="12" y1="17" x2="12" y2="21"></line>
                           </svg>
                         </div>
-                      </div>
-                      <div className="flex h-8 w-8 items-center justify-center rounded bg-slate-100 dark:bg-slate-800">
+                        <span className="text-sm font-medium text-blue-700 dark:text-blue-300">
+                          Windows
+                        </span>
+                      </a>
+
+                      <a
+                        href="https://github.com/itracksy/itracksy/releases/download/v1.0.138/itracksy-1.0.138-arm64.dmg"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center space-x-1 rounded-md bg-gray-100 px-3 py-1 transition-colors hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700"
+                      >
+                        <div className="flex h-8 w-8 items-center justify-center">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            className="text-gray-600 dark:text-gray-300"
+                          >
+                            <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+                            <path d="M14.5 4.5c-1.5 1.5-3.5 1-4.5 1.5-1 .5-2.5 2-3 3.5s.5 3.5 2 4.5c1.5 1 4 1.5 5 .5 1-1 1.5-2.5 1.5-3.5s-1-1.5-1.5-2-1.5-2-1.5-3c0-1 2-1.5 2-1.5"></path>
+                          </svg>
+                        </div>
+                        <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                          macOS
+                        </span>
+                      </a>
+                      <a
+                        href="https://github.com/itracksy/itracksy/releases/download/v1.0.138/itracksy_1.0.138_amd64.deb"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center space-x-1 rounded-md bg-slate-100 px-3 py-1 transition-colors hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700"
+                      >
+                        <div className="flex h-8 w-8 items-center justify-center">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            className="text-slate-600 dark:text-slate-300"
+                          >
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                          </svg>
+                        </div>
+                        <span className="text-sm font-medium text-slate-700 dark:text-slate-300">
+                          Linux
+                        </span>
+                      </a>
+                    </div>
+
+                    <div className="mt-4">
+                      <a
+                        href="https://github.com/itracksy/itracksy/releases/tag/v1.0.138"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center text-sm text-primary hover:underline"
+                      >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="16"
@@ -163,59 +210,12 @@ export default async function Home() {
                           strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
-                          className="text-slate-600 dark:text-slate-300"
+                          className="mr-1"
                         >
-                          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                          <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                         </svg>
-                      </div>
-                      <div className="flex h-8 w-8 items-center justify-center rounded bg-green-100 dark:bg-green-900">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          className="text-green-600 dark:text-green-300"
-                        >
-                          <rect
-                            x="5"
-                            y="2"
-                            width="14"
-                            height="20"
-                            rx="2"
-                            ry="2"
-                          ></rect>
-                          <line x1="12" y1="18" x2="12.01" y2="18"></line>
-                        </svg>
-                      </div>
-                      <div className="flex h-8 w-8 items-center justify-center rounded bg-gray-100 dark:bg-gray-800">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          className="text-gray-600 dark:text-gray-300"
-                        >
-                          <rect
-                            x="5"
-                            y="2"
-                            width="14"
-                            height="20"
-                            rx="2"
-                            ry="2"
-                          ></rect>
-                          <circle cx="12" cy="18" r="1"></circle>
-                        </svg>
-                      </div>
+                        View all releases on GitHub
+                      </a>
                     </div>
                   </div>
                 </div>
