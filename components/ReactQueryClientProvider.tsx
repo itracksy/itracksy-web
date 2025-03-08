@@ -14,33 +14,6 @@ export const ReactQueryClientProvider = ({
 }: {
   children: React.ReactNode;
 }) => {
-  const [, setSession] = useAtom(sessionAtom);
-  const router = useRouter();
-  const supabaseClient = useSupabaseBrowser();
-  const [isFirstLoad, setIsFirstLoad] = useState(true);
-
-  useEffect(() => {
-    supabaseClient.auth.getSession().then(({ data: { session } }) => {
-      setSession(session);
-      if (session && isFirstLoad && window.location.pathname === '/') {
-        router.push('/dashboard');
-        setIsFirstLoad(false);
-      }
-    });
-
-    const {
-      data: { subscription },
-    } = supabaseClient.auth.onAuthStateChange((_event, session) => {
-      setSession(session);
-      if (session && isFirstLoad && window.location.pathname === '/') {
-        router.push('/dashboard');
-        setIsFirstLoad(false);
-      }
-    });
-
-    return () => subscription.unsubscribe();
-  }, [supabaseClient, setSession, router, isFirstLoad]);
-
   const [queryClient] = useState(
     () =>
       new QueryClient({
