@@ -20,23 +20,23 @@ export const WelcomeEmail: React.FC<WelcomeEmailProps> = ({
 }) => (
   <Html>
     <Head />
-    <Preview>Welcome to BuddyBeep!</Preview>
+    <Preview>Welcome to iTracksy!</Preview>
     <Body style={main}>
       <Container style={container}>
         <Img
-          src={'https://www.buddybeep.com/logo-300.png'}
+          src={'https://www.itracksy.com/logo-300.png'}
           width={100}
           height={100}
-          alt="BuddyBeep Logo"
+          alt="iTracksy Logo"
           style={logo}
         />
-        <Heading style={h1}>Welcome to BuddyBeep!</Heading>
+        <Heading style={h1}>Welcome to iTracksy!</Heading>
         <Text style={text}>Hello {userFirstName},</Text>
         <Text style={text}>
-          {`We're excited to have you on board. BuddyBeep is here to help you
+          {`We're excited to have you on board. iTracksy is here to help you
           connect and collaborate.`}
         </Text>
-        <Button style={btn} href="https://www.buddybeep.com">
+        <Button style={btn} href="https://www.itracksy.com">
           Start Your Journey Now
         </Button>
         <Text style={text}>
@@ -44,15 +44,15 @@ export const WelcomeEmail: React.FC<WelcomeEmailProps> = ({
         </Text>
         <Text style={text}>
           Don&apos;t forget to download our extension to get the most out of
-          BuddyBeep!
+          iTracksy!
         </Text>
-        <Button style={secondaryBtn} href="https://www.buddybeep.com/install">
+        <Button style={secondaryBtn} href="https://www.itracksy.com/install">
           Download Extension
         </Button>
         <Text style={text}>
           Best regards,
           <br />
-          The BuddyBeep Team
+          The iTracksy Team
         </Text>
       </Container>
     </Body>

@@ -14,26 +14,26 @@ import * as React from 'react';
 export const InactivityEmail: React.FC = () => (
   <Html>
     <Head />
-    <Preview>We miss you at BuddyBeep!</Preview>
+    <Preview>We miss you at iTracksy!</Preview>
     <Body style={main}>
       <Container style={container}>
         <Img
-          src={'https://www.buddybeep.com/logo-300.png'}
+          src={'https://www.itracksy.com/logo-300.png'}
           width={100}
           height={100}
-          alt="BuddyBeep Logo"
+          alt="iTracksy Logo"
           style={logo}
         />
-        <Heading style={h1}>Hello from BuddyBeep!</Heading>
+        <Heading style={h1}>Hello from iTracksy!</Heading>
         <Text style={text}>
           We noticed it&apos;s been a while since you last visited us. We miss
           you!
         </Text>
         <Text style={text}>
-          Come back and check out what&apos;s new on BuddyBeep:
+          Come back and check out what&apos;s new on iTracksy:
         </Text>
-        <Button style={btn} href="https://www.buddybeep.com">
-          Visit BuddyBeep Now
+        <Button style={btn} href="https://www.itracksy.com">
+          Visit iTracksy Now
         </Button>
         <Text style={text}>
           If you have any questions or need assistance, don&apos;t hesitate to
@@ -42,7 +42,7 @@ export const InactivityEmail: React.FC = () => (
         <Text style={text}>
           Best regards,
           <br />
-          The BuddyBeep Team
+          The iTracksy Team
         </Text>
       </Container>
     </Body>

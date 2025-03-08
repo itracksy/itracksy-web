@@ -19,33 +19,33 @@ import {
 } from '@/components/ui/card';
 
 const description =
-  'BuddyBeep: AI-powered Chrome extension for smart browsing. Get website summaries, YouTube insights, and access an AI Prompt Library.';
+  'iTracksy: AI-powered Chrome extension for smart browsing. Get website summaries, YouTube insights, and access an AI Prompt Library.';
 
 export const metadata: Metadata = {
-  title: 'BuddyBeep: AI-Powered Chrome Extension for Smart Browsing',
+  title: 'iTracksy: AI-Powered Chrome Extension for Smart Browsing',
   description: description,
   keywords:
     'AI, Chrome extension, browsing assistant, website summaries, YouTube insights, AI prompts',
   viewport: 'width=device-width, initial-scale=1',
   openGraph: {
-    title: 'BuddyBeep - AI-Powered Browsing Assistant',
+    title: 'iTracksy - AI-Powered Browsing Assistant',
     description: description,
     type: 'website',
-    url: 'https://www.buddybeep.com',
+    url: 'https://www.itracksy.com',
     images: [
       {
-        url: 'https://www.buddybeep.com/logo-300.png',
+        url: 'https://www.itracksy.com/logo-300.png',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'BuddyBeep - AI-Powered Browsing Assistant',
+    title: 'iTracksy - AI-Powered Browsing Assistant',
     description: description,
-    images: ['https://www.buddybeep.com/logo-300.png'],
+    images: ['https://www.itracksy.com/logo-300.png'],
   },
   alternates: {
-    canonical: 'https://www.buddybeep.com',
+    canonical: 'https://www.itracksy.com',
   },
 };
 
@@ -58,7 +58,7 @@ export default async function Home() {
         item={{
           '@context': 'https://schema.org',
           '@type': 'SoftwareApplication',
-          name: 'BuddyBeep',
+          name: 'iTracksy',
           operatingSystem: 'Chrome',
           applicationCategory: 'BrowserExtension',
           offers: {
@@ -90,7 +90,7 @@ export default async function Home() {
           <section className="features-section bg-secondary/5 py-16">
             <div className="container mx-auto px-4">
               <h2 className="mb-12 text-center text-3xl font-bold">
-                What Can BuddyBeep Do For You?
+                What Can iTracksy Do For You?
               </h2>
               <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
                 {[
@@ -98,7 +98,7 @@ export default async function Home() {
                     title: 'AI Website Summary',
                     icon: '📄',
                     description:
-                      'BuddyBeep saves 90% of your time by summarizing website, giving key points and directly answering any of your questions about the content',
+                      'iTracksy saves 90% of your time by summarizing website, giving key points and directly answering any of your questions about the content',
                   },
                   {
                     title: 'YouTube Insights',
@@ -110,7 +110,7 @@ export default async function Home() {
                     title: 'Web to Note',
                     icon: '✂️',
                     description:
-                      'Save any content on the Internet into your BuddyBeep note to research, read or hear later while also editing them however and whenever you want.',
+                      'Save any content on the Internet into your iTracksy note to research, read or hear later while also editing them however and whenever you want.',
                   },
                 ].map((feature) => (
                   <div
@@ -133,7 +133,7 @@ export default async function Home() {
           <section className="features-section bg-secondary/5 py-16">
             <div className="container mx-auto px-4">
               <h2 className="mb-12 text-center text-3xl font-bold">
-                What Can BuddyBeep Do For You?
+                What Can iTracksy Do For You?
               </h2>
               <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
                 {[
@@ -141,7 +141,7 @@ export default async function Home() {
                     title: 'Content Fatigue',
                     icon: '/images/tired-icon.png',
                     description:
-                      'Feeling tired of watching and reading lengthy videos and texts? BuddyBeep helps you digest content quickly and efficiently.',
+                      'Feeling tired of watching and reading lengthy videos and texts? iTracksy helps you digest content quickly and efficiently.',
                   },
                   {
                     title: 'Time Management',
@@ -177,13 +177,13 @@ export default async function Home() {
                     title: 'AI Personal Assistant',
                     icon: '🗨️',
                     description:
-                      'Use BuddyBeep as your AI assistant with integrated state-of-the-art language models such as ChatGPT, Bing Copilot, Claude, and others.',
+                      'Use iTracksy as your AI assistant with integrated state-of-the-art language models such as ChatGPT, Bing Copilot, Claude, and others.',
                   },
                   {
                     title: 'Second Brain',
                     icon: '🚀',
                     description:
-                      'Store all knowledge from Internet to your personal space on private BuddyBeep dashboard and easily organize, edit, write and even share them with friends.',
+                      'Store all knowledge from Internet to your personal space on private iTracksy dashboard and easily organize, edit, write and even share them with friends.',
                   },
                   {
                     title: 'Powerful Writing',
@@ -240,7 +240,7 @@ export default async function Home() {
               <h2 className="mb-6 text-3xl font-bold">Ready to Get Started?</h2>
               <p className="mb-8 text-lg">
                 Join thousands of users who are already enjoying the benefits of
-                AI-powered browsing with BuddyBeep.
+                AI-powered browsing with iTracksy.
               </p>
               <InstallButton isAutoDetect={true} />
               <div className="mt-4">

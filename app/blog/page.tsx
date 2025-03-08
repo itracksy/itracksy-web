@@ -7,19 +7,19 @@ import { getAllTags, sortPosts, sortTagsByCount } from '@/lib/utils';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'BuddyBeep Blog - AI Browsing Tips and Insights',
+  title: 'iTracksy Blog - AI Browsing Tips and Insights',
   description:
-    'Stay updated with the latest AI browsing tips, tricks, and insights on the BuddyBeep blog.',
+    'Stay updated with the latest AI browsing tips, tricks, and insights on the iTracksy blog.',
   openGraph: {
-    title: 'BuddyBeep Blog - AI Browsing Tips and Insights',
+    title: 'iTracksy Blog - AI Browsing Tips and Insights',
     description:
-      'Stay updated with the latest AI browsing tips, tricks, and insights on the BuddyBeep blog.',
-    url: 'https://www.buddybeep.com/blog',
+      'Stay updated with the latest AI browsing tips, tricks, and insights on the iTracksy blog.',
+    url: 'https://www.itracksy.com/blog',
   },
   twitter: {
-    title: 'BuddyBeep Blog - AI Browsing Tips and Insights',
+    title: 'iTracksy Blog - AI Browsing Tips and Insights',
     description:
-      'Stay updated with the latest AI browsing tips, tricks, and insights on the BuddyBeep blog.',
+      'Stay updated with the latest AI browsing tips, tricks, and insights on the iTracksy blog.',
   },
 };
 

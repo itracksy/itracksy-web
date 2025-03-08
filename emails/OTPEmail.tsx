@@ -17,12 +17,12 @@ interface OTPEmailProps {
 export const OTPEmail: React.FC<OTPEmailProps> = ({ otp }) => (
   <Html>
     <Head />
-    <Preview>Your BuddyBeep Login OTP</Preview>
+    <Preview>Your iTracksy Login OTP</Preview>
     <Body style={main}>
       <Container style={container}>
-        <Heading style={h1}>Your BuddyBeep Login OTP</Heading>
+        <Heading style={h1}>Your iTracksy Login OTP</Heading>
         <Text style={text}>
-          Here&apos;s your one-time password (OTP) to log in to BuddyBeep:
+          Here&apos;s your one-time password (OTP) to log in to iTracksy:
         </Text>
         <Button style={btn}>{otp}</Button>
         <Text style={text}>
@@ -32,7 +32,7 @@ export const OTPEmail: React.FC<OTPEmailProps> = ({ otp }) => (
         <Text style={text}>
           Best regards,
           <br />
-          The BuddyBeep Team
+          The iTracksy Team
         </Text>
       </Container>
     </Body>

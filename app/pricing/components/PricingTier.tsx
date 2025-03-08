@@ -57,7 +57,7 @@ const PricingTier: React.FC<{
             </h2>
             <p className="mb-4 text-lg text-gray-600">
               {`You're one of our first 100 users! Enjoy unlimited free rides on
-              BuddyBeep.`}
+              iTracksy.`}
             </p>
 
             <button

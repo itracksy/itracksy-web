@@ -1,7 +1,7 @@
 {
-  "name": "BuddyBeep",
-  "short_name": "BuddyBeep",
-  "description": "BuddyBeep is a social media platform for friends to connect and share their experiences.",
+  "name": "iTracksy",
+  "short_name": "iTracksy",
+  "description": "iTracksy is a social media platform for friends to connect and share their experiences.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
@@ -19,4 +19,4 @@
       "type": "image/png"
     }
   ]
-} 
+}

@@ -28,7 +28,7 @@ export async function GET(req: NextRequest) {
         <div tw="flex relative flex-col p-12 w-full h-full items-start text-black bg-white">
           <div tw="flex items-center">
             <Image src="/logo-300.png" alt="Logo" width={24} height={24} />
-            <p tw="ml-2 font-bold text-2xl">BuddyBeep</p>
+            <p tw="ml-2 font-bold text-2xl">iTracksy</p>
           </div>
           <div tw="flex flex-col flex-1 py-10">
             <div tw="flex text-xl uppercase font-bold tracking-tight font-normal">

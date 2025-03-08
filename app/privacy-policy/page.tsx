@@ -64,7 +64,7 @@ const PrivacyPolicy = () => {
 
       <section className="mt-8">
         <h2 className="mb-4 text-2xl font-semibold">Use of Data</h2>
-        <p>BuddyBeep uses the collected data for various purposes:</p>
+        <p>iTracksy uses the collected data for various purposes:</p>
         <ul className="mt-2 list-disc pl-5">
           <li>To provide and maintain the Service</li>
           <li>To notify you about changes to our Service</li>
@@ -90,7 +90,7 @@ const PrivacyPolicy = () => {
           laws may differ from those from your jurisdiction.
         </p>
         <p className="mt-2">
-          BuddyBeep will take all steps reasonably necessary to ensure that your
+          iTracksy will take all steps reasonably necessary to ensure that your
           data is treated securely and in accordance with this Privacy Policy
           and no transfer of your Personal Data will take place to an
           organization or a country unless there are adequate controls in place
@@ -101,12 +101,12 @@ const PrivacyPolicy = () => {
       <section className="mt-8">
         <h2 className="mb-4 text-2xl font-semibold">Disclosure Of Data</h2>
         <p>
-          BuddyBeep may disclose your Personal Data in the good faith belief
-          that such action is necessary to:
+          iTracksy may disclose your Personal Data in the good faith belief that
+          such action is necessary to:
         </p>
         <ul className="mt-2 list-disc pl-5">
           <li>To comply with a legal obligation</li>
-          <li>To protect and defend the rights or property of BuddyBeep</li>
+          <li>To protect and defend the rights or property of iTracksy</li>
           <li>
             To prevent or investigate possible wrongdoing in connection with the
             Service

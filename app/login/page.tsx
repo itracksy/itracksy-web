@@ -14,9 +14,9 @@ import { EmailOTPInput } from './EmailOTPInput';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Login to BuddyBeep | AI-Powered Browsing Assistant',
+  title: 'Login to iTracksy | AI-Powered Browsing Assistant',
   description:
-    'Securely log in to your BuddyBeep account and start enhancing your browsing experience with AI-powered features.',
+    'Securely log in to your iTracksy account and start enhancing your browsing experience with AI-powered features.',
   robots: 'noindex, nofollow', // Prevent indexing of login page
 };
 
@@ -30,7 +30,7 @@ export default function Login({
       <Card className="w-full max-w-md overflow-hidden rounded-lg shadow-2xl">
         <CardHeader className="pb-2 text-center">
           <CardTitle className="text-4xl font-bold text-foreground">
-            Welcome to BuddyBeep
+            Welcome to iTracksy
           </CardTitle>
           <CardDescription className="text-lg text-muted-foreground">
             Your personal space for ideas and thoughts

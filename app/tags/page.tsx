@@ -4,21 +4,21 @@ import { posts } from '#site/content';
 import { Tag } from '@/components/tag';
 
 export const metadata: Metadata = {
-  title: 'Tags - BuddyBeep',
+  title: 'Tags - iTracksy',
   description:
-    'Explore all topic tags for BuddyBeep blog posts. Find articles on various subjects and categories.',
+    'Explore all topic tags for iTracksy blog posts. Find articles on various subjects and categories.',
   openGraph: {
-    title: 'Tags - BuddyBeep',
+    title: 'Tags - iTracksy',
     description:
-      'Explore all topic tags for BuddyBeep blog posts. Find articles on various subjects and categories.',
+      'Explore all topic tags for iTracksy blog posts. Find articles on various subjects and categories.',
     type: 'website',
-    url: 'https://www.buddybeep.com/tags',
+    url: 'https://www.itracksy.com/tags',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Tags - BuddyBeep',
+    title: 'Tags - iTracksy',
     description:
-      'Explore all topic tags for BuddyBeep blog posts. Find articles on various subjects and categories.',
+      'Explore all topic tags for iTracksy blog posts. Find articles on various subjects and categories.',
   },
 };
 
@@ -32,7 +32,7 @@ export default async function TagsPage() {
         <div className="flex-1 space-y-4">
           <h1 className="inline-block text-4xl font-black lg:text-5xl">Tags</h1>
           <p className="text-xl text-muted-foreground">
-            Browse all topics and categories covered in BuddyBeep blog posts.
+            Browse all topics and categories covered in iTracksy blog posts.
           </p>
         </div>
       </div>
@@ -50,17 +50,17 @@ export default async function TagsPage() {
         {JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'CollectionPage',
-          name: 'Tags - BuddyBeep',
+          name: 'Tags - iTracksy',
           description:
-            'Explore all topic tags for BuddyBeep blog posts. Find articles on various subjects and categories.',
-          url: 'https://www.buddybeep.com/tags',
+            'Explore all topic tags for iTracksy blog posts. Find articles on various subjects and categories.',
+          url: 'https://www.itracksy.com/tags',
           mainEntity: {
             '@type': 'ItemList',
             itemListElement: sortedTags.map((tag, index) => ({
               '@type': 'ListItem',
               position: index + 1,
               name: tag,
-              url: `https://www.buddybeep.com/tags/${tag}`,
+              url: `https://www.itracksy.com/tags/${tag}`,
             })),
           },
         })}

@@ -18,17 +18,17 @@ export async function generateMetadata({
   const { tag } = params;
   const title = tag.split('-').join(' ');
   return {
-    title: `${title} - BuddyBeep`,
+    title: `${title} - iTracksy`,
     description: `Explore posts on the topic of ${title}. Find articles, tutorials, and insights related to ${title}.`,
     openGraph: {
-      title: `${title} - BuddyBeep`,
+      title: `${title} - iTracksy`,
       description: `Explore posts on the topic of ${title}. Find articles, tutorials, and insights related to ${title}.`,
       type: 'website',
-      url: `https://buddybeep.com/tags/${tag}`,
+      url: `https://itracksy.com/tags/${tag}`,
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${title} - BuddyBeep`,
+      title: `${title} - iTracksy`,
       description: `Explore posts on the topic of ${title}. Find articles, tutorials, and insights related to ${title}.`,
     },
   };
@@ -96,15 +96,15 @@ export default function TagPage({ params }: TagPageProps) {
         {JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'CollectionPage',
-          name: `${title} - BuddyBeep`,
+          name: `${title} - iTracksy`,
           description: `Explore posts on the topic of ${title}. Find articles, tutorials, and insights related to ${title}.`,
-          url: `https://buddybeep.com/tags/${tag}`,
+          url: `https://itracksy.com/tags/${tag}`,
           mainEntity: {
             '@type': 'ItemList',
             itemListElement: displayPosts.map((post, index) => ({
               '@type': 'ListItem',
               position: index + 1,
-              url: `https://buddybeep.com/posts/${post.slug}`,
+              url: `https://itracksy.com/posts/${post.slug}`,
               name: post.title,
             })),
           },

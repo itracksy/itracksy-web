@@ -1,10 +1,10 @@
-# BuddyBeep Content
+# iTracksy Content
 
-This is the README file for the BuddyBeep Content project.
+This is the README file for the iTracksy Content project.
 
 ## Introduction
 
-BuddyBeep Content is a template for creating a Next.js blog using the Velite theme. It provides a clean and minimalistic design, perfect for showcasing your content.
+iTracksy Content is a template for creating a Next.js blog using the Velite theme. It provides a clean and minimalistic design, perfect for showcasing your content.
 
 ## Features
 
@@ -16,9 +16,9 @@ BuddyBeep Content is a template for creating a Next.js blog using the Velite the
 
 ## Getting Started
 
-To get started with BuddyBeep Content, follow these steps:
+To get started with iTracksy Content, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/buddybeep-content.git`
+1. Clone the repository: `git clone https://github.com/your-username/itracksy-content.git`
 2. Install the dependencies: `npm install`
 3. Start the development server: `npm run dev`
 4. Open your browser and navigate to `http://localhost:3000`

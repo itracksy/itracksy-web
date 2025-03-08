@@ -14,28 +14,28 @@ import * as React from 'react';
 export const ProductUpdateEmail: React.FC = () => (
   <Html>
     <Head />
-    <Preview>New updates for BuddyBeep!</Preview>
+    <Preview>New updates for iTracksy!</Preview>
     <Body style={main}>
       <Container style={container}>
         <Img
-          src={'https://www.buddybeep.com/logo-300.png'}
+          src={'https://www.itracksy.com/logo-300.png'}
           width={100}
           height={100}
-          alt="BuddyBeep Logo"
+          alt="iTracksy Logo"
           style={logo}
         />
-        <Heading style={h1}>New Updates for BuddyBeep</Heading>
+        <Heading style={h1}>New Updates for iTracksy</Heading>
         <Text style={p}>
-          We&apos;re excited to announce some new updates to BuddyBeep! Our team
+          We&apos;re excited to announce some new updates to iTracksy! Our team
           has been working hard to bring you the best experience possible.
         </Text>
-        <Button style={btn} href="https://www.buddybeep.com">
+        <Button style={btn} href="https://www.itracksy.com">
           Explore New Features Now
         </Button>
         <Text style={p}>
           If you have any questions or need help with the new features, feel
           free to reply to this email or contact our support team at{' '}
-          <a href="mailto:support@buddybeep.com">support@buddybeep.com</a>.
+          <a href="mailto:support@itracksy.com">support@itracksy.com</a>.
         </Text>
       </Container>
     </Body>

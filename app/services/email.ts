@@ -23,7 +23,7 @@ async function sendEmailWithRetry(
   while (retries < maxRetries) {
     try {
       const { data, error } = await resend.emails.send({
-        from: 'BuddyBeep <support@buddybeep.com>',
+        from: 'iTracksy <support@itracksy.com>',
         ...emailOptions,
       });
 
@@ -51,7 +51,7 @@ export async function sendInactivityEmail(userEmail: string) {
   if (toEmail) {
     await sendEmailWithRetry({
       to: toEmail,
-      subject: 'We miss you at BuddyBeep!',
+      subject: 'We miss you at iTracksy!',
       react: InactivityEmail({}),
     });
 
@@ -70,7 +70,7 @@ export async function sendWelcomeEmail(
   if (toEmail) {
     await sendEmailWithRetry({
       to: toEmail,
-      subject: 'Welcome to BuddyBeep!',
+      subject: 'Welcome to iTracksy!',
       react: WelcomeEmail({ userFirstName }),
     });
 
@@ -94,15 +94,12 @@ export async function sendProductUpdateEmail(userEmail: string) {
 
 export async function sendOTPEmail(userEmail: string, otp: string) {
   try {
- 
-  
     if (userEmail) {
       await sendEmailWithRetry({
         to: userEmail,
-        subject: 'Your BuddyBeep Login OTP',
+        subject: 'Your iTracksy Login OTP',
         react: OTPEmail({ otp }),
       });
-     
     }
   } catch (emailError) {
     console.error('Failed to send OTP email:', emailError);
